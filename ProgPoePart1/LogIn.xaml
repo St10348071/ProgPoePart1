@@ -1,0 +1,31 @@
+﻿<Window x:Class="ProgPoePart1.LogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgPoePart1"
+        mc:Ignorable="d"
+        Title="LogIn" Height="450" Width="800">
+    <Grid>
+        
+        <!-- Background definition-->
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5, 1" StartPoint="0.5, 0">
+                <GradientStop Color="WhiteSmoke"/>
+                <GradientStop Color="DarkGray" Offset="0.557"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!-- UI features -->
+        <Label Content="Enter login details:" Margin="30,50,60,355" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Height="40"></Label>
+        <StackPanel Margin="30,100,50,0">
+            <TextBlock Text="Mail:" FontSize="15" FontWeight="Bold"/>
+            <TextBox x:Name="MailTextBox"/>
+
+            <TextBlock Text="Password:" FontSize="15" FontWeight="Bold"/>
+            <TextBox x:Name="PasswordTextBox" />
+
+            <Button Content="Submit" Click="Submit_Click" Margin="100,40,100,10" Background="IndianRed" Height="30" Width="100" FontSize="16" FontWeight="Bold"/>
+        </StackPanel>
+    </Grid>
+</Window>

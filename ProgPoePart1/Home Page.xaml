@@ -1,0 +1,30 @@
+﻿<Window x:Class="ProgPoePart1.Home_Page"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgPoePart1"
+        mc:Ignorable="d"
+        Title="Home_Page" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160*"/>
+            <RowDefinition Height="57*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <!-- Background definition-->
+            <LinearGradientBrush EndPoint="0.5, 1" StartPoint="0.5, 0">
+                <GradientStop Color="WhiteSmoke"/>
+                <GradientStop Color="DarkGray" Offset="0.557"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!-- UI Features-->
+        <Label Content="Select your role:" Margin="267,40,0,0" FontSize="30" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Height="50"></Label>
+        <CheckBox x:Name="lecturer" Content="Lecturer" HorizontalAlignment="Left" Height="40" Margin="262,100,0,0" VerticalAlignment="Top" Width="300" FontSize="22"/>
+        <CheckBox x:Name="progcod" Content="Programme Coodinater" HorizontalAlignment="Left" Height="40" Margin="262,170,0,0" VerticalAlignment="Top" Width="300" FontSize="22" RenderTransformOrigin="2.908,0.459"/>
+        <CheckBox x:Name="managaer" Content="Academic Manager" HorizontalAlignment="Left" Height="40" Margin="262,230,0,0" VerticalAlignment="Top" Width="300" FontSize="22"/>
+        <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Height="60" Margin="300,300,0,0" VerticalAlignment="Top" Width="140" Click="button_Click" FontWeight="Bold" FontSize="22" Background="IndianRed" Grid.RowSpan="2"/>
+
+    </Grid>
+</Window>
